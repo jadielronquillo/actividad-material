@@ -148,7 +148,6 @@
       margin-bottom: 0;
     }
 
-    /* Botón de eliminar de cada tarea */
     .boton-eliminar {
       min-height: 44px;
       padding: 8px 16px;
@@ -161,7 +160,6 @@
       filter: none;
     }
 
-    /* Botón para eliminar todas las tareas completadas */
     #eliminar-completadas {
       margin-top: 16px;
     }
@@ -283,7 +281,6 @@
         tarea.remove();
         actualizarContador();
 
-        /* Mantiene el foco dentro de la lista al usar el teclado. */
         const destino =
           (siguiente && siguiente.querySelector('input[type="checkbox"]')) ||
           (anterior && anterior.querySelector('input[type="checkbox"]')) ||
